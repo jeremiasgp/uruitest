@@ -1,0 +1,21 @@
+$app-main-container-max-width: 600px;
+
+.app {
+  &__container {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    height: 100vh;
+  }
+  &__main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    width: 100%;
+    @media(min-width: map-get($breakpoints, 'sm')) {
+      max-width: $app-main-container-max-width;
+    }
+  }
+}
