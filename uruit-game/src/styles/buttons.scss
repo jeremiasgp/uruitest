@@ -1,0 +1,28 @@
+.btn {
+  padding: ($app-padding * 0.5) ($app-padding * 2);
+  font-size: $app-type-base * 1.1;
+  text-align: center;
+  margin-bottom: $app-padding * 0.5;
+  display: inline-block;
+  border-radius: $app-buttons-radius;
+  &--blue {
+    background-color: $app-blue;
+    color: $app-grey-light;
+    border: 2px solid darken($app-blue, 15%);
+    &:hover {
+      background-color: darken($app-blue, 15%);
+    }
+  }
+  &--grey {
+    background-color: $app-grey-light;
+    color: darken($app-grey, 20%);
+    border: 2px solid darken($app-grey, 20%);
+    &:hover {
+      background-color: darken($app-grey-light, 10%);
+    }
+  }
+  &--transparent {
+    background-color: transparent;
+    border: 2px solid darken($app-blue, 15%);
+  }
+}

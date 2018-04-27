@@ -12,8 +12,10 @@ $app-grey-light: #c7d2d8;
 $app-padding: 16px;
 $app-type-base: 16px;
 
+$app-buttons-radius: 4px;
+
 $app-main-container-max-width: 600px;
-$app-container-padding: 0 $app-padding;
+$app-container-padding: 0;
 $app-container-bg: $app-grey-light;
-$app-main-container-border: 4px solid $app-grey;
-$app-main-container-radius: 20px;
+$app-main-container-border: 2px solid $app-grey;
+$app-main-container-radius: 10px;
