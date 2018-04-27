@@ -1,0 +1,19 @@
+$breakpoints: (
+  sm: 768px,
+  md: 992px,
+  lg: 1200px
+);
+$app-blue-lighter: #97d8f4;
+$app-blue-light: #0091ca;
+$app-blue: #0072b1;
+$app-grey: #5b6e7c;
+$app-grey-light: #c7d2d8;
+
+$app-padding: 16px;
+$app-type-base: 16px;
+
+$app-main-container-max-width: 600px;
+$app-container-padding: 0 $app-padding;
+$app-container-bg: $app-grey-light;
+$app-main-container-border: 4px solid $app-grey;
+$app-main-container-radius: 20px;

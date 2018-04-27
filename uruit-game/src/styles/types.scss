@@ -1,0 +1,13 @@
+h1 {
+    font-size: $app-type-base * 1.5;
+    margin-bottom: $app-type-base;
+    @media(min-width: map-get($breakpoints, 'sm')) {
+        font-size: $app-type-base * 2.5;
+        margin-bottom: $app-type-base * 1.5;
+    }
+}
+
+p { 
+    font-size: $app-type-base;
+    margin-bottom: $app-type-base;
+}
