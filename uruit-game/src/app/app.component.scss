@@ -23,4 +23,9 @@
       margin: $app-padding 0;
     }
   }
+  &__game-container {
+    padding: $app-padding;
+    flex-basis: 100%;
+    background-color: lighten($app-grey-light, 5%);
+  }
 }
