@@ -1,3 +1,15 @@
-<p>
-  stats works!
-</p>
+<h2 class="stats__title">Scores</h2>
+<table class="table">
+  <thead class="table__head">
+    <tr>
+      <th>User</th>
+      <th>Score</th>
+    </tr>
+  </thead>
+  <tbody class="table__body">
+    <tr *ngFor="let s of stats">
+      <td>{{s.player}}</td>
+      <td>{{s.score}}</td>
+    </tr>
+  </tbody>
+</table>

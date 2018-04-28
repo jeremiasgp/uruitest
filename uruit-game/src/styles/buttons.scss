@@ -8,21 +8,32 @@
   &--blue {
     background-color: $app-blue;
     color: $app-grey-light;
-    border: 2px solid darken($app-blue, 15%);
+    border: 1px solid darken($app-blue, 10%);
     &:hover {
-      background-color: darken($app-blue, 15%);
+      background-color: darken($app-blue, 5%);
     }
   }
   &--grey {
     background-color: $app-grey-light;
     color: darken($app-grey, 20%);
-    border: 2px solid darken($app-grey, 20%);
+    border: 1px solid darken($app-grey, 20%);
     &:hover {
       background-color: darken($app-grey-light, 10%);
     }
   }
   &--transparent {
     background-color: transparent;
-    border: 2px solid darken($app-blue, 15%);
+    border: 1px solid darken($app-blue, 15%);
+  }
+  &--center {
+    display:block;
+    margin: $app-padding auto;
+  }
+  &--big {
+    padding: $app-padding ($app-padding * 3);
+    font-size: $app-type-base * 1.8;
+  }
+  &--w200 {
+    min-width:200px;
   }
 }

@@ -1,0 +1,5 @@
+.stats {
+    &__title {
+        @include game-container-title;
+    }
+}

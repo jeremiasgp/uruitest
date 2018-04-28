@@ -1,8 +1,9 @@
 // Settings
 @import "./settings.global";
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Do+Hyeon');
 
 // Mixins
+@import "./mixins";
 
 // Reset
 @import "./reset";
@@ -12,6 +13,7 @@
 
 // Objects
 @import "./buttons";
+@import "./tables";
 
 // Components
 @import "../app/app.component";
@@ -22,4 +24,6 @@
 @import "../app/game/player/player.component";
 @import "../app/game/play/play.component";
 @import "../app/game/winner/winner.component";
+
 // Utils
+@import "./utils";

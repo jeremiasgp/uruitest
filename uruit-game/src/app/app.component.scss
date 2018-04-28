@@ -1,6 +1,6 @@
 .app {
   &__container {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Do Hyeon', sans-serif;
     display: flex;
     justify-content: center;
     align-items: stretch;
@@ -16,16 +16,12 @@
     width: 100%;
     @media(min-width: map-get($breakpoints, 'sm')) {
       max-width: $app-main-container-max-width;
-      box-shadow: 1px 1px 3px #444;
-      border: $app-main-container-border;
-      border-radius: $app-main-container-radius;
-      overflow: hidden;
-      margin: $app-padding 0;
     }
   }
   &__game-container {
     padding: $app-padding;
     flex-basis: 100%;
     background-color: lighten($app-grey-light, 5%);
+    color: $app-grey;
   }
 }

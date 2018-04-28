@@ -7,6 +7,7 @@ $app-blue-lighter: #97d8f4;
 $app-blue-light: #0091ca;
 $app-blue: #0072b1;
 $app-grey: #5b6e7c;
+$app-grey-dark: darken($app-grey, 25%);
 $app-grey-light: #c7d2d8;
 
 $app-padding: 16px;

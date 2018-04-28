@@ -1,0 +1,20 @@
+.table {
+  width: 100%;
+  color: $app-grey;
+  &__head {
+    border-bottom:2px solid $app-blue;
+    color: darken($app-grey, 15%);
+    @media(min-width: map-get($breakpoints, 'sm')) {
+      font-size: $app-type-base * 1.2;
+    }
+  }
+  &__body {
+    tr {
+      border-bottom:1px solid $app-grey-light;
+    }
+  }
+  td, th {
+    border: none;
+    padding: $app-padding * 0.5;
+  }
+}
