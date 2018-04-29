@@ -17,14 +17,8 @@ export class GameService {
   constructor(private http: HttpClient) {}
 
   getRules$(): Observable<IGameRules[]> {
-    // return this.http.get(`/game/rules`);
-    return Observable.of(
-      [
-        { option: 'rock', beat: 'scissors', iconClass: 'far fa-hand-rock'},
-        { option: 'scissors', beat: 'paper', iconClass: 'far fa-hand-scissors'},
-        { option: 'paper', beat: 'rock', iconClass: 'far fa-hand-paper'}
-      ]
-    ).map(
+    return this.http.get<IGameRules[]>(`http://localhost:8080/api/game/rules`)
+    .map(
       (r) => {
         this.rules = r;
         return r;
@@ -33,16 +27,7 @@ export class GameService {
   }
 
   getStats$(): Observable<IStatsInterface[]> {
-    const mockStats = [
-      { player: 'Floor', score: '23' },
-      { player: 'Mike', score: '21' },
-      { player: 'Ian', score: '17' },
-      { player: 'Aneke', score: '16' },
-      { player: 'Angela', score: '13' },
-      { player: 'Ronnie', score: '3' },
-      { player: 'Rob', score: '0' },
-    ];
-    return Observable.of(mockStats);
+    return this.http.get<IStatsInterface[]>(`http://localhost:8080/api/game/stats`);
   }
 
   setGameInit(init: boolean): void {
@@ -69,8 +54,7 @@ export class GameService {
   }
 
   winnerToStats$(): Observable<any> {
-    // return this.http.put(`/game/stats`, { winner: this.winner });
-    return Observable.of(true);
+    return this.http.put(`http://localhost:8080/api/game/stats`, { name: this.winner });
   }
 
 }
