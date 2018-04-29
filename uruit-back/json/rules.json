@@ -1,0 +1,5 @@
+[
+  { "option": "rock", "beat": "scissors", "iconClass": "far fa-hand-rock" },
+  { "option": "scissors", "beat": "paper", "iconClass": "far fa-hand-scissors" },
+  { "option": "paper", "beat": "rock", "iconClass": "far fa-hand-paper" }
+]
