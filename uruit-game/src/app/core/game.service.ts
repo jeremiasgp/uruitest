@@ -1,11 +1,11 @@
-import { Observable } from "rxjs/Observable";
-import { IStatsInterface } from "./core.model";
+import { Observable } from 'rxjs/Observable';
+import { IStatsInterface } from './core.model';
 import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 import 'rxjs/add/observable/of';
 import 'rxjs/add/operator/map';
-import { IGameRules, IPlayerData } from "../game/game.model";
+import { IGameRules, IPlayerData } from '../game/game.model';
 import { HttpClient } from '@angular/common/http';
-import { Injectable } from "@angular/core";
+import { Injectable } from '@angular/core';
 
 @Injectable()
 export class GameService {
@@ -45,7 +45,7 @@ export class GameService {
   winnerIs(): string {
     this.winner = this.players[2].name;
     for (const rule of this.rules) {
-      if(rule.option === this.players[1].choice && rule.beat === this.players[2].choice) {
+      if (rule.option === this.players[1].choice && rule.beat === this.players[2].choice) {
         this.winner = this.players[1].name;
       }
     }

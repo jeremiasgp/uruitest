@@ -25,7 +25,7 @@ export class PlayerComponent implements OnInit {
     this.formSubmitted = true;
     if (this.playerForm.valid) {
       this.gameService.setPlayer(this.nPlayer, this.playerForm.controls['player-name'].value);
-      if(this.nPlayer < 2){
+      if (this.nPlayer < 2) {
         this.nPlayer++;
         this.playerForm.reset();
         this.formSubmitted = false;

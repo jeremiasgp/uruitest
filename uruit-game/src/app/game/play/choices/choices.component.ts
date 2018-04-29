@@ -17,7 +17,7 @@ export class ChoicesComponent implements OnInit {
 
   ngOnInit() {
     this.gameService.getRules$().subscribe(
-      (r) =>{
+      (r) => {
         this.rules = r;
     });
     this.clean.subscribe(

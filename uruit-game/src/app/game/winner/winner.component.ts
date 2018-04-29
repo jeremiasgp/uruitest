@@ -12,7 +12,7 @@ export class WinnerComponent implements OnInit {
 
   ngOnInit() {
     this.winner = this.gameService.winnerIs();
-    setTimeout(() => { this.resetGame() }, 3000);
+    setTimeout(() => { this.resetGame(); }, 3000);
   }
   resetGame(): void {
     this.router.navigate(['/']);

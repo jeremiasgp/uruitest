@@ -1,5 +1,5 @@
 export interface IGameRules {
-  option: string
+  option: string;
   beat: string;
   iconClass: string;
 }
