@@ -1,0 +1,36 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  &__group {
+    padding-bottom: $app-padding;
+    width:$form-group-width;
+    max-width: 100%;
+  }
+  &__label {
+    margin-bottom: $app-padding;
+    display: block;
+  }
+  &__input {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: ($app-padding * 0.5) $app-padding;
+    color: $app-gray-dark;
+    border:1px solid $app-gray;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    display: block;
+    margin-bottom: $app-padding;
+    &--danger {
+      border:1px solid $app-red;
+      box-shadow: 0 0 4px $app-red;
+    }
+  }
+  &__error {
+    border:1px solid $app-red;
+    background-color: lighten($app-red, 50%);
+    color: $app-red;
+    padding: $app-padding;
+  }
+}

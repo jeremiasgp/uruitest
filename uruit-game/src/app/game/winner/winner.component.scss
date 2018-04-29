@@ -1,0 +1,11 @@
+.winner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height:100%;
+  &__legend {
+    font-size: $app-type-base * 2.6;
+    color: $app-gray-dark;
+    text-align: center;
+  }
+}

@@ -6,9 +6,10 @@ $breakpoints: (
 $app-blue-lighter: #97d8f4;
 $app-blue-light: #0091ca;
 $app-blue: #0072b1;
-$app-grey: #5b6e7c;
-$app-grey-dark: darken($app-grey, 25%);
-$app-grey-light: #c7d2d8;
+$app-gray: #5b6e7c;
+$app-gray-dark: darken($app-gray, 25%);
+$app-gray-light: #c7d2d8;
+$app-red: #b21c30;
 
 $app-padding: 16px;
 $app-type-base: 16px;
@@ -17,6 +18,8 @@ $app-buttons-radius: 4px;
 
 $app-main-container-max-width: 600px;
 $app-container-padding: 0;
-$app-container-bg: $app-grey-light;
-$app-main-container-border: 2px solid $app-grey;
+$app-container-bg: $app-gray-light;
+$app-main-container-border: 2px solid $app-gray;
 $app-main-container-radius: 10px;
+
+$form-group-width: 400px;

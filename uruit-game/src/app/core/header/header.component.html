@@ -1,9 +1,12 @@
 <header class="header">
   <h1 class="header__title">Game of drones</h1>
-  <p class="header__description">Rock - Paper - Sissors</p>
+  <p class="header__description">Rock - Paper - Scissors</p>
   <nav>
     <ul class="header__nav header__nav--inline">
-      <li><a class="btn btn--blue btn--w200" routerLink="/game">New Game</a></li>
+      <li *ngIf="!(gameInit | async) else cancelGame"><a class="btn btn--blue btn--w200" routerLink="/game">New Game</a></li>
+      <ng-template #cancelGame>
+        <li><a class="btn btn--blue btn--w200" routerLink="/">Cancel Game</a></li>
+      </ng-template>
       <li><a class="btn btn--blue btn--w200" routerLink="/stats">Stats</a></li>
     </ul>
   </nav>

@@ -1,0 +1,5 @@
+.player {
+  &__title {
+    @include game-container-title;
+  }
+}

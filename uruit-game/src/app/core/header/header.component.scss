@@ -7,10 +7,10 @@
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$app-blue, endColorstr=lighten($app-blue, 10%),GradientType=0 ); /* IE6-9 */
     padding: $app-padding;
     &__title {
-        color:$app-grey-light;
+        color:$app-gray-light;
     }
     &__description {
-        color:$app-grey-light;
+        color:$app-gray-light;
     }
     &__nav {
         display:flex;

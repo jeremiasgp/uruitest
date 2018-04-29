@@ -21,7 +21,7 @@
   &__game-container {
     padding: $app-padding;
     flex-basis: 100%;
-    background-color: lighten($app-grey-light, 5%);
-    color: $app-grey;
+    background-color: lighten($app-gray-light, 5%);
+    color: $app-gray;
   }
 }

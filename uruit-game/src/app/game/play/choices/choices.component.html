@@ -1,0 +1,11 @@
+<section class="choices">
+  <div *ngFor="let rule of rules; let i = index;" class="choices__item">
+    <button
+    class="btn btn--gray btn--choice"
+    (click)="setChoice(i)"
+    [ngClass]="{'btn--active': actualChoice === i}">
+        <i class="{{rule.iconClass}}"></i>
+    </button>
+  </div>
+</section>
+<button class="btn btn--blue btn--big btn--center" (click)="setPlayerChoice()">Next</button>

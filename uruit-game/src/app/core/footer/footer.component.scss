@@ -3,9 +3,9 @@
     align-items: flex-end;
     justify-content: flex-end;
     padding: ($app-padding * 2) $app-padding $app-padding;
-    background-color: $app-grey-dark;
+    background-color: $app-gray-dark;
     &__credits {
-        color: $app-grey-light;
+        color: $app-gray-light;
         font-size: $app-type-base * 0.8;
         margin:0;
     }

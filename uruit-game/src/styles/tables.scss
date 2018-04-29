@@ -1,16 +1,16 @@
 .table {
   width: 100%;
-  color: $app-grey;
+  color: $app-gray;
   &__head {
     border-bottom:2px solid $app-blue;
-    color: darken($app-grey, 15%);
+    color: darken($app-gray, 15%);
     @media(min-width: map-get($breakpoints, 'sm')) {
       font-size: $app-type-base * 1.2;
     }
   }
   &__body {
     tr {
-      border-bottom:1px solid $app-grey-light;
+      border-bottom:1px solid $app-gray-light;
     }
   }
   td, th {

@@ -1,6 +1,9 @@
 // Settings
 @import "./settings.global";
 @import url('https://fonts.googleapis.com/css?family=Do+Hyeon');
+// Font awesome
+@import "./fa/fontawesome";
+@import "./fa/fa-regular";
 
 // Mixins
 @import "./mixins";
@@ -12,6 +15,7 @@
 @import "./types";
 
 // Objects
+@import "./forms";
 @import "./buttons";
 @import "./tables";
 
@@ -23,6 +27,7 @@
 @import "../app/core/stats/stats.component";
 @import "../app/game/player/player.component";
 @import "../app/game/play/play.component";
+@import "../app/game/play/choices/choices.component";
 @import "../app/game/winner/winner.component";
 
 // Utils

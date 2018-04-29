@@ -7,19 +7,22 @@
   border-radius: $app-buttons-radius;
   &--blue {
     background-color: $app-blue;
-    color: $app-grey-light;
+    color: $app-gray-light;
     border: 1px solid darken($app-blue, 10%);
     &:hover {
       background-color: darken($app-blue, 5%);
     }
   }
-  &--grey {
-    background-color: $app-grey-light;
-    color: darken($app-grey, 20%);
-    border: 1px solid darken($app-grey, 20%);
+  &--gray {
+    background-color: $app-gray-light;
+    color: darken($app-gray, 20%);
+    border: 1px solid darken($app-gray, 20%);
     &:hover {
-      background-color: darken($app-grey-light, 10%);
+      background-color: darken($app-gray-light, 10%);
     }
+  }
+  &--active {
+    background-color: darken($app-gray-light, 15%);
   }
   &--transparent {
     background-color: transparent;
@@ -32,6 +35,12 @@
   &--big {
     padding: $app-padding ($app-padding * 3);
     font-size: $app-type-base * 1.8;
+  }
+  &--choice {
+    width:100%;
+    line-height: 150px;
+    font-size: $app-type-base * 4;
+    display: inline-block;
   }
   &--w200 {
     min-width:200px;

@@ -11,7 +11,7 @@ export class StatsComponent implements OnInit {
   constructor(private gameService: GameService) { }
 
   ngOnInit() {
-    this.gameService.getStats().subscribe(
+    this.gameService.getStats$().subscribe(
       (stats) => {
         this.stats = stats;
       },

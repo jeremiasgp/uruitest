@@ -1,3 +1,6 @@
-<div class="game__container">
-  Game Play
+<div class="play">
+  <h2 class="play__title">Hi {{playerName}}, what is your choice ?</h2>
+  <app-choices
+  (choice)="setChoice($event)"
+  [clean]="playerChoices"></app-choices>
 </div>

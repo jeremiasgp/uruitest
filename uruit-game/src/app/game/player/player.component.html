@@ -1,3 +1,20 @@
-<div class="">
-  Game Play
+<div class="player">
+  <h2 class="player__title">Set Player {{nPlayer}} Name</h2>
+  <form [formGroup]="playerForm" class="form" (ngSubmit)="onSubmit()">
+    <div class="form__group">
+      <label for="player-name" class="form__label">Name:</label>
+      <input
+      formControlName="player-name"
+      class="form__input"
+      [ngClass]="{'form__input--danger': formSubmitted && ! playerForm.get('player-name').valid }" >
+      <div
+      class="form__error"
+      *ngIf="formSubmitted && ! playerForm.get('player-name').valid">
+        Must enter your name.
+      </div>
+    </div>
+    <div class="form__group">
+      <button class="btn btn--blue">Next</button>
+    </div>
+  </form>
 </div>
