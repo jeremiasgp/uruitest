@@ -4,7 +4,7 @@ import { CoreModule } from './core/core.module';
 import { RouterTestingModule } from '@angular/router/testing';
 import { GameService } from './core/game.service';
 
-fdescribe('AppComponent', () => {
+describe('AppComponent', () => {
   let fixture: ComponentFixture<AppComponent>;
   let component: AppComponent;
   let service: GameService;

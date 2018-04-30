@@ -10,7 +10,7 @@ const mockRouter = {
 	navigate: jasmine.createSpy('navigate')
 };
 
-fdescribe('PlayerComponent', () => {
+describe('PlayerComponent', () => {
   let component: PlayerComponent;
   let fixture: ComponentFixture<PlayerComponent>;
   let service: GameService;
