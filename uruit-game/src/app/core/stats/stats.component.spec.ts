@@ -21,10 +21,10 @@ describe('StatsComponent', () => {
     fixture = TestBed.createComponent(StatsComponent);
     component = fixture.componentInstance;
     component.stats = [
-      {"player":"Floor","score":"23"},
-      {"player":"Mike","score":"21"},
-      {"player":"Ian","score":"17"},
-      {"player":"Aneke","score":"16"}
+      {'player': 'Floor', 'score': '23'},
+      {'player': 'Mike', 'score': '21'},
+      {'player': 'Ian', 'score': '17'},
+      {'player': 'Aneke', 'score': '16'}
     ];
     fixture.detectChanges();
   });

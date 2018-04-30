@@ -28,9 +28,9 @@ describe('ChoicesComponent', () => {
     service = TestBed.get(GameService);
     component.clean = new BehaviorSubject(false);
     component.rules = [
-      { "option": "rock", "beat": "scissors", "iconClass": "far fa-hand-rock" },
-      { "option": "scissors", "beat": "paper", "iconClass": "far fa-hand-scissors" },
-      { "option": "paper", "beat": "rock", "iconClass": "far fa-hand-paper" }
+      { 'option': 'rock', 'beat': 'scissors', 'iconClass': 'far fa-hand-rock' },
+      { 'option': 'scissors', 'beat': 'paper', 'iconClass': 'far fa-hand-scissors' },
+      { 'option': 'paper', 'beat': 'rock', 'iconClass': 'far fa-hand-paper' }
     ];
     fixture.detectChanges();
   });
@@ -60,9 +60,9 @@ describe('ChoicesComponent', () => {
     button.click();
     fixture.detectChanges();
     component.choice.subscribe(
-      choice => {
-        expect(choice).toEqual(component.rules[choice].option);
+      result => {
+        expect(result).toEqual(component.rules[result].option);
       }
-    )
+    );
   });
 });

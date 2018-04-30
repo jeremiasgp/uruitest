@@ -7,7 +7,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
 
 const mockRouter = {
-	navigate: jasmine.createSpy('navigate')
+  navigate: jasmine.createSpy('navigate')
 };
 
 describe('PlayerComponent', () => {
@@ -44,7 +44,7 @@ describe('PlayerComponent', () => {
     service.gameInit.subscribe(
       init => { expect(init).toBe(true); }
     );
-  })
+  });
   it('Should have an empty field, but no one error message is present', () => {
     const compiled =  fixture.debugElement.nativeElement;
     const field = compiled.querySelector('.form__input');

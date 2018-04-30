@@ -46,6 +46,6 @@ describe('AppComponent', () => {
   it('Game service must emit false for game init', async(() => {
     service.gameInit.subscribe( init => {
       expect(init).toEqual(false);
-    })
+    });
   }));
 });

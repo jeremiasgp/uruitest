@@ -6,10 +6,10 @@ import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { Router } from '@angular/router';
 
 const mockRouter = {
-	navigate: jasmine.createSpy('navigate')
+  navigate: jasmine.createSpy('navigate')
 };
 
-class serviceMock {
+class ServiceMock {
   winnerIs() {
     return 'Mike';
   }
@@ -24,7 +24,7 @@ describe('WinnerComponent', () => {
     TestBed.configureTestingModule({
       declarations: [ WinnerComponent ],
       providers: [
-        { provide: GameService, useClass: serviceMock },
+        { provide: GameService, useClass: ServiceMock },
         { provide: Router, useValue: mockRouter }
       ],
       imports: [ HttpClientTestingModule ]
@@ -54,7 +54,7 @@ describe('WinnerComponent', () => {
     expect(compiled.querySelector('h1').textContent).toContain(component.winner);
   });
   it('Must navigate to homepage ater 3 seconds', async(() => {
-    fixture.whenStable().then( () =>{
+    fixture.whenStable().then( () => {
       setTimeout(() => {
         expect(mockRouter.navigate).toHaveBeenCalledWith(['/']);
       }, 5);

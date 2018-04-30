@@ -31,7 +31,7 @@ export class ChoicesComponent implements OnInit {
   }
 
   setPlayerChoice(): void {
-    if(!!this.actualChoice){
+    if (!!this.actualChoice) {
       this.choice.emit(this.rules[this.actualChoice].option);
     }
   }
