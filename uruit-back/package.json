@@ -4,7 +4,7 @@
   "description": "Backend para el juego del test de UruIt",
   "main": "server.js",
   "scripts": {
-    "run": "node server.js"
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
